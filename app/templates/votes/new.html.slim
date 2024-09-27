@@ -1,1 +1,42 @@
 h1 Herzlich willkommen in deiner digitalen Wahlkabine
+
+form action="/stimme/abgeben" method="POST"
+  p
+    label for="key" Wahl-Schlüssel (vom Wahlleiter in den Chat kopiert):
+    br
+    textarea#textarea name="key" rows="4" cols="50" placeholder="Hier den Wahlschlüssel rein kopieren"
+
+  p
+    label for="id" Persönlicher Identifikator (frei wählbar)
+    br
+    input#textfield type="text" name="id" maxlength="32" placeholder="max. 32 Zeichen lang"
+
+  p
+    | Abstimmung 1:
+    label
+      input type="radio" name="option1" value="yes" Ja
+    label
+      input type="radio" name="option1" value="no" Nein
+    label
+      input type="radio" name="option1" value="neutral" checked="checked" Enthaltung
+
+  p
+    | Abstimmung 2:
+    label
+      input type="radio" name="option2" value="yes" Ja
+    label
+      input type="radio" name="option2" value="no" Nein
+    label
+      input type="radio" name="option2" value="neutral" checked="checked" Enthaltung
+  p
+    | Abstimmung 3:
+    label
+      input type="radio" name="option3" value="yes" Ja
+    label
+      input type="radio" name="option3" value="no" Nein
+    label
+      input type="radio" name="option3" value="neutral" checked="checked" Enthaltung
+
+  p
+    input type="submit" value="Submit"
+    input type="reset" value="Reset"
