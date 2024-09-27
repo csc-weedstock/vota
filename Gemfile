@@ -39,3 +39,5 @@ group :test do
 end
 
 gem 'rubocop', '~> 1.66'
+
+gem "slim", "~> 5.2"
