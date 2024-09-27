@@ -4,8 +4,7 @@ module Vota
   module Actions
     module Votes
       class New < Vota::Action
-        def handle(request, response)
-        end
+        def handle(request, response); end
       end
     end
   end

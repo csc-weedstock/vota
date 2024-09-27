@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "hanami"
+require 'hanami'
 
 module Vota
   class App < Hanami::App
